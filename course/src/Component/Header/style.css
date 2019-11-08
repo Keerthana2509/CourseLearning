@@ -1,0 +1,15 @@
+.TextColor {
+    color: white;
+    font-family: Cambria;
+}
+.link {
+    font-size: 20px;
+    font-weight: 300;
+}
+.input {
+    width:250px;
+}
+.image {
+    height:10x;
+    width:190px;
+}
