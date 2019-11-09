@@ -4,12 +4,17 @@
 }
 .link {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: bold;
 }
 .input {
     width:250px;
 }
 .image {
-    height:10x;
-    width:190px;
+    height:80x;
+    width:80px;
+}
+.header_fixed {
+    position: fixed;
+    width: 100%;
+    top:0px;
 }

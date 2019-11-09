@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import Header from './Component/Header';
+// import Header from './Component/Header';
+// import Footer from './Component/Footer';
+import HTMLMainPage from './Container/HTMLMainPage';
 
 function App() {
   return (
@@ -19,7 +21,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Header/>
+      <HTMLMainPage/>
     </div>
   );
 }
