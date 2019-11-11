@@ -18,7 +18,7 @@ export default class HomePage extends Component {
 
                 LearningStudio, a portmanteau of you + academy, has more than 30 million students and 50,000 instructors teaching courses in over 60 languages. There have been over 245 million course enrollments. Students and instructors come from 190+ countries and 2/3 of students are located outside of the U.S. LearningStudio also has over 4,000 enterprise customers and 80% of Fortune 100 companies use LearningStudio for employee upskilling (LearningStudio for Business). Students take courses largely as a means of improving job-related skills.[2] Some courses generate credit toward technical certification. LearningStudio has made a special effort to attract corporate trainers seeking to create coursework for employees of their company.[3]
 
-As of 2019, there are more than 130,000 courses on the website.
+                As of 2019, there are more than 130,000 courses on the website.
                 </p>
                 <h2>Overview</h2>
                 <p>

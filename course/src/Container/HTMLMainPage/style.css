@@ -2,3 +2,28 @@
     margin-top: 80px;
     margin-bottom: 20px;
 }
+.link {
+    display:block;
+    text-decoration: none;
+}
+.nav_display {
+    background-color: lavender;
+}
+#content1 {
+    display: block;
+}
+#content2 {
+    display: none;
+}
+.scrolling {
+    height:100px;
+    scroll-behavior: auto;
+}
+/*Introduction*/
+.intro_example {
+ background-color: antiquewhite;
+}
+.block_style li{
+    background-color: burlywood; 
+    margin:10px;
+}

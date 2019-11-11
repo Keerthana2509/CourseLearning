@@ -12,14 +12,11 @@ import './style.css';
 class Header extends Component {
     render() {
         return (
-            <div className="TextColor header_fixed">
+            <div className="TextColor header_fixed bg-primary">
                 <Navbar expand="lg" bg="primary" variant="dark">
-                    {/* <Navbar.Brand>Learning Studio</Navbar.Brand> */}
-           <Navbar.Brand><Image className="image" src="https://www.slingshot.co.uk/wp-content/uploads/Learning-Studio-Logo-952x595.jpg"/></Navbar.Brand>
-
+                    <Navbar.Brand><Image className="image" src="https://www.slingshot.co.uk/wp-content/uploads/Learning-Studio-Logo-952x595.jpg"/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-            
                     <Form inline>
                     <InputGroup>
                         <InputGroup>
@@ -40,8 +37,7 @@ class Header extends Component {
                     </Navbar.Collapse>
                     <Button variant="success">Report</Button>
                 </Navbar>
-            </div>
-           // <Navbar.Brand><Image className="image" src="https://www.slingshot.co.uk/wp-content/uploads/Learning-Studio-Logo-952x595.jpg"/></Navbar.Brand>
+            </div>  
         );
     }
 }
