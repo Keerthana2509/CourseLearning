@@ -1,14 +1,23 @@
 import React from 'react';
 import './App.css';
-// import Header from './Component/Header';
-// import Footer from './Component/Footer';
+import HomePage from './Container/HomePage';
 import HTMLMainPage from './Container/HTMLMainPage';
+import CSSMainPage from './Container/CSSMainPage';
+import BootstrapMainPage from './Container/BootstrapMainPage';
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
+
 
 function App() {
-  let HtmlTopics = ["HTML Introduction","HTML Elements","HTML Attributes","HTML Headings","HTML Paragraphs","HTML Styles"];
   return (
     <div>
-      <HTMLMainPage topics={HtmlTopics}/>
+      <Router>
+        <Switch>
+          <Route exact path={"/"} component={HomePage}/>
+          <Route path={"/htmlpage"} component={HTMLMainPage}/>
+          <Route path={"/csspage"} component={CSSMainPage}/>
+          <Route path={"/bootstrappage"} component={BootstrapMainPage}/>
+        </Switch>
+      </Router>
     </div>
   );
 }

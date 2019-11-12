@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style.css';
+import Base from '../../../Component/Button';
  
 export default class IntroductionQuiz extends Component {
     render() {
@@ -37,6 +38,9 @@ export default class IntroductionQuiz extends Component {
                         <input type="radio" name="paragraph" value="<text>"/><label>&lt;text&gt;</label><br/>
                     </li>
                 </ol>
+                <div className="text-center">
+                <Base variant="success" text="Finish"/> 
+                </div>
             </div>
         );
     }

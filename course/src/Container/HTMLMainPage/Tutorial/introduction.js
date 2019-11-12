@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style.css';
  
 export default class Introduction extends Component {
     render() {

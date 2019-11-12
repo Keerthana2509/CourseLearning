@@ -5,85 +5,84 @@ import Footer from '../../Component/Footer';
 import './style.css';
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 //HTML Tutorial pages  
-import Introduction from './Tutorial/introduction.js';
-import Elements from './Tutorial/elements.js';
-import Attributes from './Tutorial/attribute';
-import Heading from './Tutorial/headings';
-import Paragraph from './Tutorial/paragraph';
-import Images from './Tutorial/images';
+import CSSIntroduction from './Tutorial/introduction.js';
+import CSSSyntax from './Tutorial/syntax';
+import CSSSelectors from './Tutorial/selectors';
+import CSSBorder from './Tutorial/border';
+import CSSMargin from './Tutorial/margin';
+import CSSPadding from './Tutorial/padding';
+
 //HTML Quiz Pages
-import IntroductionQuiz from './Quiz/introductionquiz.js';
-import ElementsQuiz from './Quiz/elementsquiz';
-import AttributesQuiz from './Quiz/attributesquiz';
-const routes = [
-    {
-      path: "/introductiontutorial",
+//import IntroductionQuiz from './Quiz/introductionquiz.js';
+ const routes = [
+     {
+      path: "/introduction",
       exact: true,
-      main: () => <Introduction/>
-    },
-    {
-      path: "/introductionquiz",
-      main: () => <IntroductionQuiz/>
-    },
-    {
-      path: "/elementtutorial",
-      main: () => <Elements/>
-    },
-    {
-        path: "/elementquiz",
-        main: () => <ElementsQuiz/>
-      },
+      main: () => <CSSIntroduction/>
+     },
+//     {
+//       path: "/hqi",
+//       main: () => <IntroductionQuiz/>
+//     },
+     {
+       path: "/syntax",
+       main: () => <CSSSyntax/>
+     },
+//     {
+//         path: "/hqe",
+//         main: () => <ElementsQuiz/>
+//       },
+       {
+         path: "/selector",
+         main: () => <CSSSelectors/>
+       },
+//       {
+//         path: "/hqa",
+//         main: () => <AttributesQuiz/>
+//       },
+       {
+         path: "/border",
+         main: () => <CSSBorder/>
+       },
       {
-        path: "/attributetutorial",
-        main: () => <Attributes/>
+        path: "/padding",
+        main: () => <CSSPadding/>
       },
-      {
-        path: "/attributequiz",
-        main: () => <AttributesQuiz/>
-      },
-      {
-        path: "/headingtutorial",
-        main: () => <Heading/>
-      },
-      {
-        path: "/paragraphtutorial",
-        main: () => <Paragraph/>
-      },
-      {
-        path: "/imagetutorial",
-        main: () => <Images/>
-      }
-  ];
-export default class HTMLMainPage extends Component {
+       {
+         path: "/margin",
+         main: () => <CSSMargin/>
+       }
+   ];
+export default class CSSMainPage extends Component {
     render() {
         let HtmlTopics = [
-            {text:"HTML Introduction",
-            tutorial:"/introductiontutorial",
-            quiz: "/introductionquiz"
+            {text:"CSS Introduction",
+            tutorial:"/introduction",
+            quiz: "/hqi"
         },
         {
-            text: "HTML Elements",
-            tutorial: "/elementtutorial",
-            quiz : "/elementquiz"
+            text: "CSS Syntax",
+            tutorial: "/syntax",
+            quiz : "/hqe"
         },
         {
-            text: "HTML Attributes",
-            tutorial: "/attributetutorial",
-            quiz: "/attributequiz"
+            text: "CSS Selectors",
+            tutorial: "/selector",
+            quiz: "/hqa"
         },
         {
-            text:"HTML Headings",
-            tutorial: "/headingtutorial",
+            text:"CSS Borders",
+            tutorial: "/border",
             quiz: ""
         },
         {
-            text:"HTML Paragraphs",
-            tutorial: "/paragraphtutorial",
+            text:"CSS Margins",
+            tutorial: "/margin",
             quiz:""
         },
         {
-            text:"HTML Images",
-            tutorial: "/imagetutorial",
+            text:"CSS Padding",
+            tutorial: "/padding",
             quiz :""
         },
     ];

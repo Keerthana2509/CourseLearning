@@ -8,6 +8,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Image from 'react-bootstrap/Image';
 import './style.css';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
     render() {
@@ -27,13 +28,16 @@ class Header extends Component {
                         </InputGroup>
                     </InputGroup>
                     </Form>
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#home" className="link">HOME</Nav.Link>
-                        <Nav.Link href="#h" className="link">HTML</Nav.Link>
-                        <Nav.Link href="#c" className="link">CSS</Nav.Link>
-                        <Nav.Link href="#b" className="link">Bootstrap</Nav.Link>
-                        <Nav.Link href="#j" className="link">JavaScript</Nav.Link>
-                    </Nav>
+                    
+                        <Nav className="mr-auto">
+                            <Link to="/" className="nav-link">HOME</Link>
+                            <Link to="/htmlpage" className="nav-link">HTML</Link>
+                            <Link to="/csspage" className="nav-link">CSS</Link>
+                            <Link to="/bootstrappage" className="nav-link">BootStrap</Link>
+                            {/*
+                            <Nav.Link >JavaScript</Nav.Link> */}
+                        </Nav>
+                    
                     </Navbar.Collapse>
                     <Button variant="success">Report</Button>
                 </Navbar>

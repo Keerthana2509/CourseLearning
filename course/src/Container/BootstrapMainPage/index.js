@@ -5,86 +5,75 @@ import Footer from '../../Component/Footer';
 import './style.css';
 import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 //HTML Tutorial pages  
-import Introduction from './Tutorial/introduction.js';
-import Elements from './Tutorial/elements.js';
-import Attributes from './Tutorial/attribute';
-import Heading from './Tutorial/headings';
-import Paragraph from './Tutorial/paragraph';
-import Images from './Tutorial/images';
+import BootstrapTypography from './Tutorial/typography';
+import BootstrapColor from './Tutorial/color';
+import BootstrapTable from './Tutorial/tables';
+import BootstrapImage from './Tutorial/images';
+import BootstrapJumbotron from './Tutorial/jumbotron';
+
 //HTML Quiz Pages
-import IntroductionQuiz from './Quiz/introductionquiz.js';
-import ElementsQuiz from './Quiz/elementsquiz';
-import AttributesQuiz from './Quiz/attributesquiz';
-const routes = [
-    {
-      path: "/introductiontutorial",
+//import IntroductionQuiz from './Quiz/introductionquiz.js';
+ const routes = [
+     {
+      path: "/typography",
       exact: true,
-      main: () => <Introduction/>
-    },
-    {
-      path: "/introductionquiz",
-      main: () => <IntroductionQuiz/>
-    },
-    {
-      path: "/elementtutorial",
-      main: () => <Elements/>
-    },
-    {
-        path: "/elementquiz",
-        main: () => <ElementsQuiz/>
-      },
+      main: () => <BootstrapTypography/>
+     },
+//     {
+//       path: "/hqi",
+//       main: () => <IntroductionQuiz/>
+//     },
+     {
+       path: "/color",
+       main: () => <BootstrapColor/>
+     },
+//     {
+//         path: "/hqe",
+//         main: () => <ElementsQuiz/>
+//       },
+       {
+         path: "/table",
+         main: () => <BootstrapTable/>
+       },
+//       {
+//         path: "/hqa",
+//         main: () => <AttributesQuiz/>
+//       },
+       {
+         path: "/image",
+         main: () => <BootstrapImage/>
+       },
       {
-        path: "/attributetutorial",
-        main: () => <Attributes/>
+        path: "/jumbotron",
+        main: () => <BootstrapJumbotron/>
       },
-      {
-        path: "/attributequiz",
-        main: () => <AttributesQuiz/>
-      },
-      {
-        path: "/headingtutorial",
-        main: () => <Heading/>
-      },
-      {
-        path: "/paragraphtutorial",
-        main: () => <Paragraph/>
-      },
-      {
-        path: "/imagetutorial",
-        main: () => <Images/>
-      }
-  ];
-export default class HTMLMainPage extends Component {
+    ];
+export default class BootstrapMainPage extends Component {
     render() {
         let HtmlTopics = [
-            {text:"HTML Introduction",
-            tutorial:"/introductiontutorial",
-            quiz: "/introductionquiz"
+            {text:"Bootstrap Typography",
+            tutorial:"/typography",
+            quiz: "/hqi"
         },
         {
-            text: "HTML Elements",
-            tutorial: "/elementtutorial",
-            quiz : "/elementquiz"
+            text: "Bootstrap Colors",
+            tutorial: "/color",
+            quiz : "/hqe"
         },
         {
-            text: "HTML Attributes",
-            tutorial: "/attributetutorial",
-            quiz: "/attributequiz"
+            text: "Bootstrap Tables",
+            tutorial: "/table",
+            quiz: "/hqa"
         },
         {
-            text:"HTML Headings",
-            tutorial: "/headingtutorial",
+            text:"Bootstrap Images",
+            tutorial: "/image",
             quiz: ""
         },
         {
-            text:"HTML Paragraphs",
-            tutorial: "/paragraphtutorial",
+            text:"Bootstrap Jumbotron",
+            tutorial: "/jumbotron",
             quiz:""
-        },
-        {
-            text:"HTML Images",
-            tutorial: "/imagetutorial",
-            quiz :""
         },
     ];
         return(
