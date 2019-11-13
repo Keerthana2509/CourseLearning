@@ -28,16 +28,13 @@ class Header extends Component {
                         </InputGroup>
                     </InputGroup>
                     </Form>
-                    
                         <Nav className="mr-auto">
                             <Link to="/" className="nav-link">HOME</Link>
                             <Link to="/htmlpage" className="nav-link">HTML</Link>
                             <Link to="/csspage" className="nav-link">CSS</Link>
                             <Link to="/bootstrappage" className="nav-link">BootStrap</Link>
-                            {/*
-                            <Nav.Link >JavaScript</Nav.Link> */}
+                            <Link to="/javascriptpage" className="nav-link">JavaScript</Link>
                         </Nav>
-                    
                     </Navbar.Collapse>
                     <Button variant="success">Report</Button>
                 </Navbar>

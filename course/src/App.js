@@ -4,8 +4,8 @@ import HomePage from './Container/HomePage';
 import HTMLMainPage from './Container/HTMLMainPage';
 import CSSMainPage from './Container/CSSMainPage';
 import BootstrapMainPage from './Container/BootstrapMainPage';
+import JavascriptMainPage from './Container/JavascriptMainPage';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
-
 
 function App() {
   return (
@@ -16,10 +16,10 @@ function App() {
           <Route path={"/htmlpage"} component={HTMLMainPage}/>
           <Route path={"/csspage"} component={CSSMainPage}/>
           <Route path={"/bootstrappage"} component={BootstrapMainPage}/>
+          <Route path={"/javascriptpage"} component={JavascriptMainPage}/>
         </Switch>
       </Router>
     </div>
   );
 }
-
 export default App;

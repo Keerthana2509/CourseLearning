@@ -7,7 +7,24 @@ import './style.css';
 
 export default class HomePage extends Component {
     render() {
-        let dropdownItems = ["HTML","CSS","Bootstrap","JavaScript"];
+        let dropdownItems = [
+            {
+                text:"HTML",
+                link:"/htmlpage"
+            },
+            {
+                text:"CSS",
+                link:"/csspage"
+            },
+            {
+                text:"Bootstrap",
+                link:"/bootstrappage" 
+            },
+            {
+                text:"JavaScript",
+                link:"/javascriptpage"
+            }
+        ];
         return(
             <div>
                 <Header/>
