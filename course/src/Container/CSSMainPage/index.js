@@ -93,7 +93,7 @@ let paddingquestions = [
      },
     {
       path: "/introductionquiz",
-      main: () => <Quiz questions={introductionquestions} totalquestions={3}/>
+      main: () => <Quiz questions={introductionquestions} totalquestions={3} topic="CSS INtroduction"/>
     },
      {
        path: "/syntaxtutorial",
@@ -101,7 +101,7 @@ let paddingquestions = [
      },
     {
         path: "/syntaxquiz",
-        main: () => <Quiz questions={syntaxquestions} totalquestions={3}/>
+        main: () => <Quiz questions={syntaxquestions} totalquestions={3} topic="CSS Syntax"/>
       },
        {
          path: "/selectortutorial",
@@ -109,7 +109,7 @@ let paddingquestions = [
        },
       {
         path: "/selectorquiz",
-        main: () => <Quiz questions={selectorquestions} totalquestions={5}/>
+        main: () => <Quiz questions={selectorquestions} totalquestions={5} topic="CSS Selectors"/>
       },
        {
          path: "/bordertutorial",
@@ -117,7 +117,7 @@ let paddingquestions = [
        },
        {
         path: "/borderquiz",
-        main: () => <Quiz questions={borderquestions} totalquestions={4}/>
+        main: () => <Quiz questions={borderquestions} totalquestions={4} topic="CSS Border"/>
       },
       {
         path: "/paddingtutorial",
@@ -125,7 +125,7 @@ let paddingquestions = [
       },
       {
         path: "/paddingquiz",
-        main: () => <Quiz questions={paddingquestions} totalquestions={3}/>
+        main: () => <Quiz questions={paddingquestions} totalquestions={3} topic="CSS Padding"/>
       },
        {
          path: "/margintutorial",
@@ -133,7 +133,7 @@ let paddingquestions = [
        },
        {
         path: "/marginquiz",
-        main: () => <Quiz questions={marginquestions} totalquestions={4}/>
+        main: () => <Quiz questions={marginquestions} totalquestions={4} topic="CSS Margin"/>
       },
    ];
 export default class CSSMainPage extends Component {

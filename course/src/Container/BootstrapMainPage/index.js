@@ -66,7 +66,7 @@ let jumbotronquestions = [
      },
     {
       path: "/typographyquiz",
-      main: () => <Quiz questions={typographyquestions} totalquestions={4}/>
+      main: () => <Quiz questions={typographyquestions} totalquestions={4} topic="Bootstrap Typography"/>
     },
      {
        path: "/colortutorial",
@@ -74,7 +74,7 @@ let jumbotronquestions = [
      },
     {
         path: "/colorquiz",
-        main: () => <Quiz questions={colorquestions} totalquestions={2}/>
+        main: () => <Quiz questions={colorquestions} totalquestions={2} topic="Bootstrap Color" />
       },
        {
          path: "/tabletutorial",
@@ -82,7 +82,7 @@ let jumbotronquestions = [
        },
       {
         path: "/tablequiz",
-        main: () => <Quiz questions={tablequestions} totalquestions={4}/>
+        main: () => <Quiz questions={tablequestions} totalquestions={4} topic="Bootstrap Table"/>
       },
        {
          path: "/imagetutorial",
@@ -90,7 +90,7 @@ let jumbotronquestions = [
        },
        {
         path: "/imagequiz",
-        main: () => <Quiz questions={imagequestions} totalquestions={4}/>
+        main: () => <Quiz questions={imagequestions} totalquestions={4} topic="Bootstrap Image"/>
       },
       {
         path: "/jumbotrontutorial",
@@ -98,7 +98,7 @@ let jumbotronquestions = [
       },
       {
         path: "/jumbotronquiz",
-        main: () => <Quiz questions={jumbotronquestions} totalquestions={2}/>
+        main: () => <Quiz questions={jumbotronquestions} totalquestions={2} topic="Bootstrap Jumbotron"/>
       },
     ];
 export default class BootstrapMainPage extends Component {

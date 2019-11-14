@@ -50,7 +50,7 @@ let operatorquestions = [
      },
     {
       path: "/introductionquiz",
-      main: () => <Quiz questions={introductionquestion} totalquestions={2}/>
+      main: () => <Quiz questions={introductionquestion} totalquestions={2} topic="JS Introduction"/>
     },
      {
        path: "/syntax",
@@ -58,7 +58,7 @@ let operatorquestions = [
      },
     {
         path: "/syntaxquiz",
-        main: () => <Quiz questions={syntaxquestions} totalquestions={2}/>
+        main: () => <Quiz questions={syntaxquestions} totalquestions={2} topic="JS Syntax"/>
       },
        {
          path: "/comment",
@@ -66,7 +66,7 @@ let operatorquestions = [
        },
       {
         path: "/commentsquiz",
-        main: () => <Quiz questions={commentsquestions} totalquestions={2}/>
+        main: () => <Quiz questions={commentsquestions} totalquestions={2} topic="JS Comments"/>
       },
        {
          path: "/variable",
@@ -74,7 +74,7 @@ let operatorquestions = [
        },
        {
         path: "/variablequiz",
-        main: () => <Quiz questions={variablequestions} totalquestions={2}/>
+        main: () => <Quiz questions={variablequestions} totalquestions={2} topic="JS Variables"/>
       },
       {
         path: "/operator",
@@ -82,7 +82,7 @@ let operatorquestions = [
       },
        {
          path: "/operatorquiz",
-         main: () => <Quiz questions={operatorquestions} totalquestions={2}/>
+         main: () => <Quiz questions={operatorquestions} totalquestions={2} topic="JS Operators"/>
        }
    ];
 export default class JavascriptMainPage extends Component {

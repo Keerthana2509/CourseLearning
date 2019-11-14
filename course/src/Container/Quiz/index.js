@@ -3,27 +3,36 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 import Base from '../../Component/Button';
 let count = 0;
+let check = [];
+var fs = require('browserify-fs');
 
 export default class Quiz extends Component {
     constructor() {
         super();
-        this.state = {
-            count: 0
-        };
         this.result = this.result.bind(this);
         this.evaluate = this.evaluate.bind(this);
     }
     evaluate(e) {
         let name = e.target.name;
+        let flag =0;
         let value = e.target.value;
         this.props.questions.map((item) => {
         if(name === item.name && value === item.answer){
-             count =count+1;
+            check[item.name] = 1; 
+            flag=1;
         }
-    })
+        });
+        if(flag === 0) {
+            check[name] = 0;
+        }
     }
     result() {
+        this.props.questions.map((item) => {
+                count = count+check[item.name]; 
+        });
         alert("Total marks you scored out of "+this.props.totalquestions+" questions is: "+count);
+        let checkitem = this.props.topic+"|"+this.props.totalquestions+"|"+count+"%"
+        fs.appendFile('./text.txt', checkitem);
         count=0;
     }
 

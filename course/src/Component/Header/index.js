@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
+import Base from '../Button';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
 import InputGroup from 'react-bootstrap/InputGroup';
@@ -23,7 +23,7 @@ class Header extends Component {
                         <InputGroup>
                             <FormControl className="input" placeholder="Search.."/>
                             <InputGroup.Append>
-                                <Button variant="success">Button</Button>
+                                <Base variant="success" text="Button"/>
                             </InputGroup.Append>
                         </InputGroup>
                     </InputGroup>
@@ -36,7 +36,7 @@ class Header extends Component {
                             <Link to="/javascriptpage" className="nav-link">JavaScript</Link>
                         </Nav>
                     </Navbar.Collapse>
-                    <Button variant="success">Report</Button>
+                    <Link to="/report"><Base variant="success" text="Report"/></Link>
                 </Navbar>
             </div>  
         );

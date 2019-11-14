@@ -86,7 +86,7 @@ const routes = [
     },
     {
       path: "/introductionquiz",
-      main: () => <Quiz questions={introductionquestions} totalquestions={4}/>
+      main: () => <Quiz questions={introductionquestions} totalquestions={4} topic="HTML Introduction"/>
     },
     {
       path: "/elementtutorial",
@@ -94,7 +94,7 @@ const routes = [
     },
     {
         path: "/elementquiz",
-        main: () => <Quiz questions={elementsquestions} totalquestions={4}/>
+        main: () => <Quiz questions={elementsquestions} totalquestions={4} topic="HTML Elements"/>
       },
       {
         path: "/attributetutorial",
@@ -102,7 +102,7 @@ const routes = [
       },
       {
         path: "/attributequiz",
-        main: () => <Quiz questions={attributequestions} totalquestions={4}/>
+        main: () => <Quiz questions={attributequestions} totalquestions={4} topic="HTML attributes"/>
       },
       {
         path: "/headingtutorial",
@@ -110,7 +110,7 @@ const routes = [
       },
       {
         path: "/headingquiz",
-        main: () => <Quiz questions={headingquestions} totalquestions={5}/>
+        main: () => <Quiz questions={headingquestions} totalquestions={5} topic="HTML Headings"/>
       },
       {
         path: "/paragraphtutorial",
@@ -118,7 +118,7 @@ const routes = [
       },
       {
         path: "/paragraphquiz",
-        main: () => <Quiz questions={paragraphquestions} totalquestions={3}/>
+        main: () => <Quiz questions={paragraphquestions} totalquestions={3} topic="HTML Paragraph"/>
       },
       {
         path: "/imagetutorial",
@@ -126,7 +126,7 @@ const routes = [
       },
       {
         path: "/imagequiz",
-        main: () => <Quiz questions={imagequestions} totalquestions={4}/>
+        main: () => <Quiz questions={imagequestions} totalquestions={4} topic="HTML Images"/>
       },
   ];
 export default class HTMLMainPage extends Component {
